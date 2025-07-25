@@ -30,5 +30,5 @@ docker-compose up --build
 ```bash
 docker-compose down
 ```
-
-> Tested with Resume and github actions.md file
+### 5. localhost:8001/docs 
+> Provides a GUI to test the endpoint by Fastapi
