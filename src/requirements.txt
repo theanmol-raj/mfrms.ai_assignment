@@ -1,0 +1,10 @@
+pdfplumber 
+requests 
+dateparser 
+regex
+fastapi
+uvicorn
+python-multipart
+openai 
+pandas
+

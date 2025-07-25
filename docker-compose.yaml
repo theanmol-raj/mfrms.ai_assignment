@@ -1,0 +1,18 @@
+services:
+  duckling:
+    image: rasa/duckling
+    ports:
+      - "8000:8000"
+
+  fastapi:
+    build:
+      context: .
+    depends_on:
+      - duckling
+    ports:
+      - "8001:8001"
+    environment:
+      - DUCKLING_URL=http://duckling:8000/parse
+      - OVERALL_MODEL=openAI
+      - OPENAI_VERSION=gpt-4o-2024-08-06
+      - OPENAI_API_KEY=${OPENAI_API_KEY}

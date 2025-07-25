@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.db
+.venv
+venv
+venv/
+venv/*
+
+__pycache__/
+*.pyc
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore IDE/editor files
+.vscode/
+*.swp
+
+# Ignore OS junk
+.DS_Store
+
+# Ignore dependencies if needed
+node_modules/
+.env
