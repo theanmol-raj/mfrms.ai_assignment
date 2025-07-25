@@ -15,13 +15,18 @@ This project uses Docker Compose to run.
 git clone https://github.com/theanmol-raj/mfrms.ai_assignment.git anmol
 cd anmol
 ```
+### 2. Create .env and add "OPENAI_API_KEY"=your_key_here
 
-### 2. Run the app
+```bash
+touch .env
+```
+
+### 3. Run the app
 ```bash
 docker-compose up --build
 ```
 
-### 3. Stop the app
+### 4. Stop the app
 ```bash
 docker-compose down
 ```
